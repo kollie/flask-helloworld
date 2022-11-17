@@ -16,7 +16,7 @@ def hello(name=None):
 
 @application.route('/', methods=['POST'])
 def post():
-    return '{"Output":"Hello World"}'
+    return '{"Output":"Hello World Test"}'
 
 if __name__ == '__main__':
     flaskrun(application)
