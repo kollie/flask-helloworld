@@ -1,1 +1,3 @@
-pkill supervisord
+cd /home/ec2-user/server2/
+source environment/bin/activate
+supervisord -c supervisord.conf
