@@ -1,6 +1,8 @@
 #!/bin/bash
-cd /home/ec2-user/server3
-python -m venv venv
-source venv/bin/activate
-pip3 install -r requirements.txt
-pip3 install supervisor
+easy_install pip
+pip install virtualenv
+cd /home/ec2-user/python-flask-service
+virtualenv environment
+source environment/bin/activate
+pip install -r requirements.txt
+pip install supervisor
