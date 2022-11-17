@@ -28,13 +28,14 @@ permissions:
       - file
 hooks:
   AfterInstall:
-   - location: scripts/install_dependencies
-     timeout: 300
-     runas: ec2-user
-   - location: scripts/start_server
-     timeout: 300
-     runas: ec2-user
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/start_server
+      timeout: 300
+      runas: ec2-user
   ApplicationStop:
-   - location: scripts/stop_server
-     timeout: 300
-     runas: ec2-user
+    - location: scripts/stop_server
+      timeout: 300
+      runas: ec2-user
