@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: /src
+ - source: /
    destination: /home/ec2-user/server3
  - source: requirements.txt
    destination: /home/ec2-user/server3
