@@ -1,1 +1,1 @@
-pkill supervisord
+service httpd stop
