@@ -1,6 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/server3
-python3 -m venv venv
-source venv/bin/activate
-pip3 install -r requirements.txt
-flask run
+yum install -y httpd mod_wsgi.x86_64
+pip3 install awscli
+pip3 install -r /home/ec2-user/server3/requirements.txt

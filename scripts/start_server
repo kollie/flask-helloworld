@@ -1,3 +1,2 @@
-cd /home/ec2-user/server3/
-source venv/bin/activate
-supervisord -c supervisord.conf
+#!/bin/bash
+service httpd start

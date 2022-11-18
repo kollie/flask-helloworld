@@ -1,8 +1,12 @@
 version: 0.0
 os: linux
 files:
- - source: /
-   destination: /home/ec2-user/server3
+ - source: /app.wsgi
+    destination: /var/www/server3
+  - source: /
+    destination: /home/ec2-user/server3
+  - source: /conf/server3.conf
+    destination: /etc/httpd/conf.d
 permissions:
   - object: /home/ec2-user/server3/helloworld.py
     owner: ec2-user
