@@ -1,4 +1,0 @@
-#!/bin/bash
-yum install -y httpd mod_wsgi.x86_64
-pip3 install awscli
-pip3 install -r /home/ec2-user/server3/requirements.txt
